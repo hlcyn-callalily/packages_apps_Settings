@@ -67,6 +67,7 @@ android_library {
         "res-product",
         "stub/features/res",
         "stub/ui/res",
+        "TouchGestures/res"
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
     static_libs: [
