@@ -263,4 +263,12 @@
         android:summary="@string/device_spoofing_summary"
         android:fragment="com.android.settings.security.DeviceSpoofing" />
 
+    <Preference
+        android:order="91"
+        android:key="hide_developer_status_settings"
+        android:title="@string/hide_developer_status_title"
+        android:summary="@string/hide_developer_status_summary"
+        android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
+        settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />
+
 </PreferenceScreen>

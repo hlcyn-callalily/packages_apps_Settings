@@ -403,6 +403,14 @@
     <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
     <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
+
     <!-- Expressive QR -->
     <string name="wifi_qr_code_animation_control">pause the animation</string>
+
+    <!-- Hide developer status -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+
 </resources>
