@@ -38,7 +38,7 @@ public class FirmwareVersionSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.firmware_version;
+        return R.xml.halcyon_version;
     }
 
     @Override
