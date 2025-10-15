@@ -50,7 +50,6 @@ import com.android.settings.communal.CommunalPreferenceController;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.datausage.BillingCycleScreen;
 import com.android.settings.datausage.BillingCycleSettings;
-import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionScreen;
 import com.android.settings.display.ColorModePreferenceFragment;
 import com.android.settings.display.ColorModeScreen;
 import com.android.settings.emergency.EmergencyDashboardFragment;
@@ -170,11 +169,7 @@ public class Settings extends SettingsActivity {
     public static class SmartAutoRotateSettingsActivity extends SettingsActivity { /* empty */ }
     public static class RefreshRateSettingsActivity extends SettingsActivity { /* empty */ }
     public static class MyDeviceInfoActivity extends SettingsActivity { /* empty */ }
-    public static class FirmwareVersionActivity extends CatalystSettingsActivity {
-        public FirmwareVersionActivity() {
-            super(FirmwareVersionScreen.KEY);
-        }
-    }
+    public static class FirmwareVersionActivity extends SettingsActivity { /* empty */ }
     public static class ModuleLicensesActivity extends SettingsActivity { /* empty */ }
     public static class ApplicationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ManageApplicationsActivity extends SettingsActivity { /* empty */ }

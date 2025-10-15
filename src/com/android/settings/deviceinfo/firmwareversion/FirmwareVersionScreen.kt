@@ -53,7 +53,7 @@ open class FirmwareVersionScreen : PreferenceScreenMixin, PreferenceSummaryProvi
         get() = R.string.keywords_android_version
 
     override val indexable
-        get() = true
+        get() = false
 
     // Once fully launch, change to PreferenceFragment and clean up FirmwareVersionScreenTest
     override fun fragmentClass(): Class<out Fragment>? = FirmwareVersionSettings::class.java
@@ -63,19 +63,13 @@ open class FirmwareVersionScreen : PreferenceScreenMixin, PreferenceSummaryProvi
     override val highlightMenuKey: Int
         get() = R.string.menu_key_about_device
 
-    override fun hasCompleteHierarchy() = true
+    override fun hasCompleteHierarchy() = false
 
     override fun getLaunchIntent(context: Context, metadata: PreferenceMetadata?) =
         makeLaunchIntent(context, FirmwareVersionActivity::class.java, metadata?.key)
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
-            +FirmwareVersionDetailPreference()
-            +SecurityPatchLevelPreference()
-            +MainlineModuleVersionPreference()
-            +BasebandVersionPreference()
-            +KernelVersionPreference()
-            +SimpleBuildNumberPreference()
         }
 
     companion object {

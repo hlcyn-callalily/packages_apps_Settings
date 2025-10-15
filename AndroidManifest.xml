@@ -1824,6 +1824,8 @@
         <activity android:name=".Settings$FirmwareVersionActivity"
             android:label="@string/firmware_version"
             android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                 android:value="@string/menu_key_about_device"/>
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
