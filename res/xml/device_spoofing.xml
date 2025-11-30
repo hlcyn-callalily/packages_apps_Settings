@@ -43,6 +43,14 @@
             android:dependency="certified_props"
             android:defaultValue="" />
 
+        <Preference
+            android:order="91"
+            android:key="user_selectable_app_spoofing"
+            android:title="@string/user_selectable_app_spoofing_title"
+            android:summary="@string/user_selectable_app_spoofing_summary"
+            android:dependency="certified_props"
+            android:fragment="com.android.settings.halcyon.security.UserSelectedAppSpoofSettings" />
+
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
 </PreferenceScreen>

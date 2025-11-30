@@ -364,6 +364,11 @@
     <string name="keybox_spoof_title">Select keybox</string>
     <string name="keybox_spoof_summary">Select a keybox file to spoof key attestation</string>
 
+    <!-- User selectable app spoofing -->
+    <string name="user_selectable_app_spoofing_title">Select apps to spoof</string>
+    <string name="user_selectable_app_spoofing_summary">Choose which apps to spoof</string>
+    <string name="user_select_spoofing_profile_title">Select spoofing profile</string>
+
     <!-- Keybox Data -->
     <string name="keybox_data_title">Select keybox XML to spoof</string>
     <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>
@@ -375,7 +380,6 @@
     <!-- Spoofing toggle -->
     <string name="cert_overlay_title">Spoof certified properties</string>
     <string name="cert_overlay_summary">Spoof PI certified properties to GMS\nRequires a reboot to apply</string>
-
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 
