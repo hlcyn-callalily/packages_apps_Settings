@@ -22,9 +22,9 @@
     android:title="@string/device_spoofing_title">
 
     <com.android.settingslib.widget.MainSwitchPreference
-        android:key="certified_props"
-        android:title="@string/device_spoofing_enable_title"
-        settings:controller="com.android.settings.security.CertifiedPropsPreferenceController" />
+        android:key="halcyon_pih_enabled"
+        android:title="@string/halcyon_pih_enabled_title"
+        settings:controller="com.android.settings.halcyon.security.PihActivationPreferenceController" />
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:key="device_spoofing_category">
@@ -33,14 +33,14 @@
             android:key="pif_data_setting"
             android:title="@string/device_spoof_preset_title"
             android:summary="@string/device_spoof_preset_summary"
-            android:dependency="certified_props"
+            android:dependency="halcyon_pih_enabled"
             android:defaultValue="" />
 
         <com.android.settings.security.KeyboxDataPreference
             android:key="keybox_data_setting"
             android:title="@string/keybox_spoof_title"
             android:summary="@string/keybox_spoof_summary"
-            android:dependency="certified_props"
+            android:dependency="halcyon_pih_enabled"
             android:defaultValue="" />
 
         <Preference
@@ -48,7 +48,7 @@
             android:key="user_selectable_app_spoofing"
             android:title="@string/user_selectable_app_spoofing_title"
             android:summary="@string/user_selectable_app_spoofing_summary"
-            android:dependency="certified_props"
+            android:dependency="halcyon_pih_enabled"
             android:fragment="com.android.settings.halcyon.security.UserSelectedAppSpoofSettings" />
 
     </com.android.settingslib.widget.UntitledPreferenceCategory>

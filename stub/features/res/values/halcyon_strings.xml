@@ -359,6 +359,7 @@
     <string name="device_spoofing_title">Device spoofing</string>
     <string name="device_spoofing_summary">Override device properties and spoof key attestation</string>
     <string name="device_spoofing_enable_title">Enable device spoofing</string>
+    <string name="halcyon_pih_enabled_title">Enable device spoofing</string>
     <string name="device_spoof_preset_title">Select device spoof preset</string>
     <string name="device_spoof_preset_summary">Select device spoof preset file to override device properties in applications</string>
     <string name="keybox_spoof_title">Select keybox</string>
