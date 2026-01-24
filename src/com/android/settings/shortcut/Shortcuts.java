@@ -82,7 +82,7 @@ class Shortcuts {
                     R.layout.shortcut_badge_maskable,
                     context.getResources().getDimensionPixelSize(R.dimen.shortcut_size_maskable)));
         } else {
-            return Icon.createWithResource(context, R.drawable.ic_launcher_settings);
+            return Icon.createWithResource(context, R.drawable.ic_launcher_nest);
         }
     }
 
@@ -107,7 +107,7 @@ class Shortcuts {
             ((ImageView) view.findViewById(android.R.id.icon)).setImageDrawable(iconDrawable);
         } catch (PackageManager.NameNotFoundException e) {
             Log.w(TAG, "Cannot load icon from app " + app + ", returning a default icon");
-            Icon icon = Icon.createWithResource(context, R.drawable.ic_launcher_settings);
+            Icon icon = Icon.createWithResource(context, R.drawable.ic_launcher_nest);
             ((ImageView) view.findViewById(android.R.id.icon)).setImageIcon(icon);
         }
 
