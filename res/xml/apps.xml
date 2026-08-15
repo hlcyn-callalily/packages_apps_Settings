@@ -115,6 +115,12 @@
         android:title="@string/special_access"
         android:order="20"/>
 
+    <!-- Spoofing toggle -->
+    <SwitchPreferenceCompat
+        android:key="certified_props"
+        android:title="@string/cert_overlay_title"
+        android:summary="@string/cert_overlay_summary" />
+
     <com.android.settings.applications.KeyboxDataPreference
         android:key="keybox_data_setting"
         android:title="@string/keybox_data_title"
