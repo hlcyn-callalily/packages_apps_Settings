@@ -119,7 +119,8 @@
     <SwitchPreferenceCompat
         android:key="certified_props"
         android:title="@string/cert_overlay_title"
-        android:summary="@string/cert_overlay_summary" />
+        android:summary="@string/cert_overlay_summary"
+        settings:controller="com.android.settings.applications.CertifiedPropsPreferenceController" />
 
     <com.android.settings.applications.KeyboxDataPreference
         android:key="keybox_data_setting"
