@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.applications;
+package com.android.settings.security;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -49,6 +49,6 @@ public class CertifiedPropsPreferenceController extends TogglePreferenceControll
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return R.string.menu_key_apps;
+        return R.string.menu_key_security;
     }
 }

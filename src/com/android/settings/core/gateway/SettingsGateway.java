@@ -196,6 +196,7 @@ import com.android.settings.safetycenter.MoreSecurityPrivacyFragment;
 import com.android.settings.safetycenter.ui.SafetyCenterFragment;
 import com.android.settings.safetycenter.ui.SafetyCenterQsFragment;
 import com.android.settings.security.ContentProtectionPreferenceFragment;
+import com.android.settings.security.DeviceSpoofing;
 import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.MemtagPage;
 import com.android.settings.security.SecurityAdvancedSettings;
@@ -277,6 +278,7 @@ public class SettingsGateway {
             SecuritySettings.class.getName(),
             SecurityAdvancedSettings.class.getName(),
             MoreSecurityPrivacyFragment.class.getName(),
+            DeviceSpoofing.class.getName(),
             UsageAccessDetails.class.getName(),
             PrivacySettings.class.getName(),
             DeviceAdminSettings.class.getName(),
@@ -484,6 +486,7 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
+            Settings.DeviceSpoofingActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.ShadeSettingsActivity.class.getName(),
     };

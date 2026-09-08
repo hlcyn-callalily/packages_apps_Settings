@@ -355,6 +355,15 @@
     <string name="app_list_search_apps">Search apps</string>
     <string name="app_list_loading">Loading apps\u2026</string>
 
+    <!-- Device spoofing -->
+    <string name="device_spoofing_title">Device spoofing</string>
+    <string name="device_spoofing_summary">Override device properties and spoof key attestation</string>
+    <string name="device_spoofing_enable_title">Enable device spoofing</string>
+    <string name="device_spoof_preset_title">Select device spoof preset</string>
+    <string name="device_spoof_preset_summary">Select device spoof preset file to override device properties in applications</string>
+    <string name="keybox_spoof_title">Select keybox</string>
+    <string name="keybox_spoof_summary">Select a keybox file to spoof key attestation</string>
+
     <!-- Keybox Data -->
     <string name="keybox_data_title">Select keybox XML to spoof</string>
     <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>

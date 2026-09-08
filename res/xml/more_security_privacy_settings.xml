@@ -256,4 +256,11 @@
                 android:targetPackage="com.google.attestation.verifier" />
     </Preference>
 
+    <Preference
+        android:order="320"
+        android:key="device_spoofing"
+        android:title="@string/device_spoofing_title"
+        android:summary="@string/device_spoofing_summary"
+        android:fragment="com.android.settings.security.DeviceSpoofing" />
+
 </PreferenceScreen>

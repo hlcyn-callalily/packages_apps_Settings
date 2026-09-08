@@ -1,4 +1,4 @@
-package com.android.settings.applications;
+package com.android.settings.security;
 
 import android.content.Context;
 import android.content.Intent;
@@ -50,7 +50,11 @@ public class KeyboxDataPreference extends Preference {
         title.setText(getTitle());
         summary.setText(getSummary());
 
+        deleteButton.setEnabled(isEnabled());
         holder.itemView.setOnClickListener(v -> {
+            if (!isEnabled()) {
+                return;
+            }
             if (mFilePickerLauncher != null) {
                 Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
                 intent.setType("text/xml");
@@ -60,6 +64,9 @@ public class KeyboxDataPreference extends Preference {
         });
 
         deleteButton.setOnClickListener(v -> {
+            if (!isEnabled()) {
+                return;
+            }
             Settings.Secure.putString(getContext().getContentResolver(),
                     Settings.Secure.KEYBOX_DATA, null);
             Toast.makeText(getContext(), "XML data cleared", Toast.LENGTH_SHORT).show();
